@@ -1,25 +1,23 @@
 import 'package:flutter/material.dart';
-import 'package:football_news/widgets/left_drawer.dart';
 import 'package:football_news/widgets/news_card.dart';
+import 'package:football_news/widgets/left_drawer.dart';
 
 class MyHomePage extends StatelessWidget {
   MyHomePage({super.key});
-
-  final String nama = "Deltakristiano Kurniaputra"; //nama
-  final String npm = "2406425810"; //npm
-  final String kelas = "C";
 
   final List<ItemHomepage> items = [
     ItemHomepage("See Football News", Icons.newspaper),
     ItemHomepage("Add News", Icons.add),
     ItemHomepage("Logout", Icons.logout),
   ];
+  final String nama = "Deltakristiano Kurniaputra"; //nama
+  final String npm = "2406425810"; //npm
+  final String kelas = "C"; //kelas
 
   @override
   Widget build(BuildContext context) {
     // Scaffold menyediakan struktur dasar halaman dengan AppBar dan body.
     return Scaffold(
-      // AppBar adalah bagian atas halaman yang menampilkan judul.
       appBar: AppBar(
         // Judul aplikasi "Football News" dengan teks putih dan tebal.
         title: const Text(
